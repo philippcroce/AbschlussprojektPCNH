@@ -1,1 +1,1 @@
-# AbschlussprojektPCNH
+# AbschlussprojektPCNH (Kinoverwaltung)
