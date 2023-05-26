@@ -1,0 +1,105 @@
+--  --  --  --  --  --  --
+--                      --
+--    Kinoverwaltung    --
+--    by Noah Horeis    --
+--                      --
+--  --  --  --  --  --  --
+
+
+-- Alle existierenden Tabellen löschen
+DROP TABLE IF EXISTS Karte, Kunde, Vorstellung, Film, Saal, Mitarbeiter, Kino;
+
+
+-- Tabelle KINO erstellen
+CREATE TABLE Kino (
+
+	KinoID int NOT NULL AUTO_INCREMENT,
+    Strasse varchar(32),
+    HNr varchar(8),
+    Stadt varchar(32),
+    TelNr varchar(16),
+    
+    PRIMARY KEY (KinoID)
+    
+);
+
+-- Tabelle MITARBEITER erstellen
+CREATE TABLE Mitarbeiter (
+
+	MitarbeiterID int NOT NULL AUTO_INCREMENT,
+    Kino int NOT NULL,
+    Vorname varchar(64),
+    Nachname varchar(64),
+    Email varchar(64),
+    
+    PRIMARY KEY (MitarbeiterID),
+    FOREIGN KEY (Kino) REFERENCES Kino(KinoID)
+
+);
+
+-- Tabelle SAAL erstellen
+CREATE TABLE Saal (
+
+	SaalID int NOT NULL AUTO_INCREMENT,
+    Kino int NOT NULL,
+    Pojektion varchar(8),
+    Plaeze int NOT NULL,
+    
+    PRIMARY KEY (SaalID),
+    FOREIGN KEY (Kino) REFERENCES Kino(KinoID)
+
+);
+
+-- Tabelle FILM erstellen
+CREATE TABLE Film (
+    
+    FilmID int NOT NULL AUTO_INCREMENT,
+    Name int NOT NULL,
+    Dauer int,
+    
+    PRIMARY KEY (FilmID)
+    
+);
+
+-- Tabelle Vorstellung erstellen
+CREATE TABLE Vorstellung (
+
+    VorstellungsID int NOT NULL AUTO_INCREMENT,
+    Saal int NOT NULL,
+    Film int NOT NULL,
+    ZP_S timestamp NULL,
+    ZP_E timestamp NULL,
+    
+    PRIMARY KEY (VorstellungsID),
+    FOREIGN KEY (Saal) REFERENCES Saal(SaalID),
+    FOREIGN KEY (Film) REFERENCES Film(FilmID)
+
+);
+
+-- Tabelle KUNDE erstellen
+CREATE TABLE Kunde (
+    
+    KundenID int NOT NULL AUTO_INCREMENT,
+    Vorname varchar(64),
+    Nachname varchar(64),
+    Email varchar(64) NOT NULL,
+    Strasse varchar(64),
+    HNr varchar(8),
+    
+    PRIMARY KEY (KundenID)
+    
+);
+
+-- Tabelle KARTE erstellen
+CREATE TABLE Karte (
+    
+	KartenID int NOT NULL AUTO_INCREMENT,
+    Vorstellung int NOT NULL,
+    Kunde int NOT NULL,
+    Sitzplatz int,
+    
+    PRIMARY KEY (KartenID),
+    FOREIGN KEY (Vorstellung) REFERENCES Vorstellung(VorstellungsID),
+    FOREIGN KEY (Kunde) REFERENCES Kunde(KundenID)
+    
+);
