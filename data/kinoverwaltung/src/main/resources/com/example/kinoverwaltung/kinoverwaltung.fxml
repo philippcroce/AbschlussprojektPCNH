@@ -3,27 +3,25 @@
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
 
-
-<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
+<AnchorPane fx:id="apMain" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
    <children>
-      <MenuBar nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="557.0">
+      <MenuBar fx:id="mbMain" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="557.0">
         <menus>
           <Menu fx:id="mBuchen" mnemonicParsing="false" text="Buchen" />
-            <Menu mnemonicParsing="false" text="Vorstellungen" />
-          <Menu mnemonicParsing="false" text="Filme" />
-            <Menu mnemonicParsing="false" text="Kunden" />
-            <Menu mnemonicParsing="false" text="Infrastruktur" />
+            <Menu fx:id="mVorstellungen" mnemonicParsing="false" text="Vorstellungen">
+               <graphic>
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="160.0" />
+               </graphic></Menu>
+          <Menu fx:id="mFilme" mnemonicParsing="false" text="Filme" />
+            <Menu fx:id="mKunden" mnemonicParsing="false" text="Kunden" />
+            <Menu fx:id="mMitarbeiter" mnemonicParsing="false" text="Mitarbeiter" />
+            <Menu fx:id="mKinos" mnemonicParsing="false" text="Kinos" />
         </menus>
          <opaqueInsets>
             <Insets />
          </opaqueInsets>
       </MenuBar>
-      <Label layoutX="6.0" layoutY="25.0" prefHeight="48.0" prefWidth="500.0" text=" Kinoverwaltung">
-         <font>
-            <Font name="Verdana" size="25.0" />
-         </font>
-      </Label>
+      <Label fx:id="lbTitle" layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="211.0" text="Title" />
    </children>
 </AnchorPane>
