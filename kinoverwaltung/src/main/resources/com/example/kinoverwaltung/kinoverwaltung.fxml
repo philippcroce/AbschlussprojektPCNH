@@ -1,28 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<VBox prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.HelloController">
+<VBox prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
    <children>
       <MenuBar nodeOrientation="LEFT_TO_RIGHT">
         <menus>
-          <Menu mnemonicParsing="false" text="Plan">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Film">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Auflisten" />
-                  <MenuItem mnemonicParsing="false" text="Hinzufügen" />
-                  <MenuItem mnemonicParsing="false" text="Löschen" />
-                  <MenuItem mnemonicParsing="false" text="Umplanen" />
-            </items>
-          </Menu>
+          <Menu mnemonicParsing="false" text="Buchen" />
+            <Menu mnemonicParsing="false" text="Vorstellungen" />
+          <Menu mnemonicParsing="false" text="Filme" />
+            <Menu mnemonicParsing="false" text="Kunden" />
+            <Menu mnemonicParsing="false" text="Infrastruktur" />
         </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </MenuBar>
+      <Label prefHeight="48.0" prefWidth="500.0" text=" Kinoverwaltung">
+         <font>
+            <Font name="Verdana" size="25.0" />
+         </font>
+      </Label>
    </children>
    <cursor>
       <Cursor fx:constant="HAND" />
