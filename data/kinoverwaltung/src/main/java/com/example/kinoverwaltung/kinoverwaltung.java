@@ -31,8 +31,11 @@ public class kinoverwaltung implements Initializable {
     }
     @FXML
     private void mBuchenAction(ActionEvent event) {
+
         lbTitle.setText("Buchen");
+
     }
+
     @FXML
     private void mVorstellungenAction(ActionEvent event) {
         lbTitle.setText("Vorstellungen");

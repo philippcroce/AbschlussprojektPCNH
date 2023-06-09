@@ -5,7 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="25fc8304-55ea-49fb-b7bf-c15befbb8aa9" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../data/kinoverwaltung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/kinoverwaltung/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/../data/kinoverwaltung/mvnw" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/com/example/kinoverwaltung/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data/com/example/kinoverwaltung/HelloApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/com/example/kinoverwaltung/kinoverwaltung.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/com/example/kinoverwaltung/kinoverwaltung.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/util/DB_Connector.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data/util/DB_Connector.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/util/DML_DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/../data/kinoverwaltung/src/main/java/util/DML_DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,7 +30,7 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/Philipp Laptop/OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting/Dokumente/Schule/3.Klasse/Infi/Projekt/AbschlussprojektPCNH/kinoverwaltung"
+    "last_opened_file_path": "C:/Users/Philipp Laptop/OneDrive - Höhere technische Bundeslehranstalt Graz-Gösting/Dokumente/Schule/3.Klasse/Infi/Projekt/AbschlussprojektPCNH/data/kinoverwaltung"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
