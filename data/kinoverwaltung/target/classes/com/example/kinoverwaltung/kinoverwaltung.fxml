@@ -1,36 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
 
-<VBox prefHeight="500.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
-    </padding>
+<AnchorPane fx:id="apMain" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
    <children>
-      <MenuBar nodeOrientation="LEFT_TO_RIGHT">
+      <MenuBar fx:id="mbMain" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="557.0">
         <menus>
-          <Menu mnemonicParsing="false" text="File">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Edit">
-            <items>
-              <MenuItem mnemonicParsing="false" text="Delete" />
-            </items>
-          </Menu>
-          <Menu mnemonicParsing="false" text="Help">
-            <items>
-              <MenuItem mnemonicParsing="false" text="About" />
-            </items>
-          </Menu>
+          <Menu fx:id="mBuchen" mnemonicParsing="false" onAction="#mBuchenAction" text="Buchen" />
+            <Menu fx:id="mVorstellungen" mnemonicParsing="false" text="Vorstellungen">
+               <graphic>
+                  <Separator opacity="0.0" prefHeight="0.0" prefWidth="160.0" />
+               </graphic></Menu>
+          <Menu fx:id="mFilme" mnemonicParsing="false" text="Filme" />
+            <Menu fx:id="mKunden" mnemonicParsing="false" text="Kunden" />
+            <Menu fx:id="mMitarbeiter" mnemonicParsing="false" text="Mitarbeiter" />
+            <Menu fx:id="mKinos" mnemonicParsing="false" text="Kinos" />
         </menus>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
       </MenuBar>
+      <Label fx:id="lbTitle" layoutX="14.0" layoutY="25.0" prefHeight="25.0" prefWidth="211.0" text="Title" />
    </children>
-   <cursor>
-      <Cursor fx:constant="HAND" />
-   </cursor>
-</VBox>
+</AnchorPane>

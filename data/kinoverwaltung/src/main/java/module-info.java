@@ -8,4 +8,6 @@ module com.example.kinoverwaltung {
 
     opens com.example.kinoverwaltung to javafx.fxml;
     exports com.example.kinoverwaltung;
+    exports util;
+    opens util to javafx.fxml;
 }

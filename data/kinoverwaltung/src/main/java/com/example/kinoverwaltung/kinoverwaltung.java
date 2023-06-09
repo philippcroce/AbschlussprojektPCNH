@@ -8,30 +8,10 @@ import javafx.scene.control.Menu;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.beans.property.ListProperty;
-import javafx.beans.property.SimpleListProperty;
-import javafx.collections.FXCollections;
-import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXML;
+
 import javafx.fxml.FXMLLoader;
-import javafx.fxml.Initializable;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.CheckBox;
-import javafx.scene.control.ComboBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.MenuItem;
-import javafx.scene.control.RadioButton;
-import javafx.scene.control.Spinner;
-import javafx.scene.control.SpinnerValueFactory.IntegerSpinnerValueFactory;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
-import javafx.scene.control.Toggle;
-import javafx.scene.control.ToggleGroup;
-import javafx.scene.control.cell.PropertyValueFactory;
-import javafx.stage.Modality;
+import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
 public class kinoverwaltung implements Initializable {
@@ -57,16 +37,21 @@ public class kinoverwaltung implements Initializable {
     @FXML
     private void mBuchenAction(ActionEvent event) {
 
-        lbTitle.setText("Buchen");
+
         try {
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("buchen.fxml"));
+            Pane pane = loader.load();
+            Scene scene = new Scene(pane);
+            Stage stage = new Stage();
+            stage.setScene(scene);
+            stage.show();
+        } catch (Exception e) {
+            e.printStackTrace();
+                }
+            }
 
-        } finally {
 
-        }
-
-    }
-
-    @FXML
+    @Deprecated
     private void mVorstellungenAction(ActionEvent event) {
         lbTitle.setText("Vorstellungen");
     }
