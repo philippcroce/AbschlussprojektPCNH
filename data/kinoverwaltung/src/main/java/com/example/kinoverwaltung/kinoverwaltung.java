@@ -45,7 +45,7 @@ public class kinoverwaltung implements Initializable {
 
         try {
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/com.example.kinoverwaltung/buchen.fxml"));
+            loader.setLocation(getClass().getResource("buchen.fxml"));
             Parent root = loader.load();
 
             Stage stage = new Stage();
@@ -54,7 +54,7 @@ public class kinoverwaltung implements Initializable {
             stage.showAndWait();
 
 
-            //cbPersons.setItems(PersonDAO.getPersons());
+
         } catch (IOException ex) {
             ex.printStackTrace();
         }
