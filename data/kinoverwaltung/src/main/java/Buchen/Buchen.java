@@ -11,7 +11,7 @@ public class Buchen {
 
 
     public void buchen(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("../../resources/com/example/kinoverwaltung/buchen.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(main.class.getResource("../com/example/kinoverwaltung/buchen.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
         stage.setTitle("Kinoverwaltung by Noah Horeis & Philipp Croce");
         stage.setScene(scene);
