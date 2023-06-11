@@ -50,7 +50,7 @@ public class kinoverwaltung implements Initializable {
 
     }
     @FXML
-    private void mBuchenAction(ActionEvent event) {lbTitle.setText("Buchen");
+    public void mBuchenAction() {lbTitle.setText("Buchen");
 
 
         try {
@@ -64,6 +64,8 @@ public class kinoverwaltung implements Initializable {
             e.printStackTrace();
         }
     }
+
+
 
 
     @Deprecated
@@ -87,11 +89,4 @@ public class kinoverwaltung implements Initializable {
         lbTitle.setText("Kinos");
     }
 
-    public Menu getmBuchen() {
-        return mBuchen;
-    }
-
-    public void setmBuchen(Menu mBuchen) {
-        this.mBuchen = mBuchen;
-    }
 }
