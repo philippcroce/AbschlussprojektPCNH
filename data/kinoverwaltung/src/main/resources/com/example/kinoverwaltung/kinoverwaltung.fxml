@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-<AnchorPane fx:id="apMain" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
+<AnchorPane fx:id="apMain" prefHeight="500.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.kinoverwaltung">
    <children>
       <MenuBar fx:id="mbMain" nodeOrientation="LEFT_TO_RIGHT" prefHeight="25.0" prefWidth="557.0">
         <menus>
-          <Menu fx:id="mBuchen" mnemonicParsing="false" onAction="#mBuchenAction" text="Buchen" />
+          <Menu fx:id="mBuchen" mnemonicParsing="false" text="Buchen" />
             <Menu fx:id="mVorstellungen" mnemonicParsing="false" text="Vorstellungen">
                <graphic>
                   <Separator opacity="0.0" prefHeight="0.0" prefWidth="160.0" />

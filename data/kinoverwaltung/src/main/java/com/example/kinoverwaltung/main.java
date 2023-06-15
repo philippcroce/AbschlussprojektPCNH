@@ -14,7 +14,6 @@ public class main extends Application {
         stage.setTitle("Kinoverwaltung by Noah Horeis & Philipp Croce");
         stage.setScene(scene);
         stage.show();
-
     }
 
     public static void main(String[] args) {

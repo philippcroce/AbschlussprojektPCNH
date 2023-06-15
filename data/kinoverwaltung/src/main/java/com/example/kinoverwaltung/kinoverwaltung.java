@@ -5,14 +5,9 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
 import javafx.scene.control.Menu;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Scene;
-import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ResourceBundle;
-
-import javafx.scene.layout.Pane;
 
 public class kinoverwaltung implements Initializable {
     @FXML
@@ -35,27 +30,12 @@ public class kinoverwaltung implements Initializable {
 
     }
     @FXML
-    public void mBuchenAction() {lbTitle.setText("Buchen");
-
-
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("buchen.fxml"));
-            Pane pane = loader.load();
-            Scene scene = new Scene(pane);
-            Stage stage = new Stage();
-            stage.setScene(scene);
-            stage.show();
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
+    private void mBuchenAction(ActionEvent event) {
+        lbTitle.setText("Buchen");
     }
-
-
-
-
-    @Deprecated
+    @FXML
     private void mVorstellungenAction(ActionEvent event) {
-
+        lbTitle.setText("Vorstellungen");
     }
     @FXML
     private void mFilmeAction(ActionEvent event) {
@@ -73,5 +53,4 @@ public class kinoverwaltung implements Initializable {
     private void mAction(ActionEvent event) {
         lbTitle.setText("Kinos");
     }
-
 }

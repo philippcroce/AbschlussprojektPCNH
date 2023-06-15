@@ -8,7 +8,7 @@ public class DML_DAO {
         Connection con;
 
         try {
-            con = util.DB_Connector.connect();
+            con = DB_Connector.connect();
             con.createStatement().executeUpdate(sql);
         } catch (SQLException ex) {
             System.err.println(ex.getMessage());
