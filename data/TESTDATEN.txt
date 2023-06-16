@@ -1,13 +1,6 @@
 INSERT INTO Kino(KinoID,Strasse,HNr,Stadt,TelNr)
-VALUES('1','Annenstraße','11','Graz','01862585459'),
-VALUES('2','Am Ring','1','Wien','0664674254'),
-
-
-
-
-
-
-
+VALUES(1,'Annenstraße','11','Graz','01862585459'),
+VALUES(2,'Am Ring','1','Wien','0664674254'),
 
 
 
@@ -15,12 +8,34 @@ VALUES('2','Am Ring','1','Wien','0664674254'),
 
 
 INSERT INTO Mitarbeiter(MitarbeiterID, Kino, Vorname, Nachname, Email)
-VALUES ('1', '1', 'Hannes', 'Winkler', 'hannes.winkler@kino.at'),
-('2', '1', 'Paula', 'Jung', 'paula.jung@kino.at'),
-('3', '1', 'Peter', 'Schmidt', 'peter.schmidt@kino.at'),
-('4', '2', 'Harald', 'Schreiner', 'harald.schreiner@kino.at'),
-('5', '2', 'Kurt', 'Müller', 'kurt.müller@kino.at'),
-('6', '1', 'Michaella', 'Maier', 'michaella.maier@kino.at');
+VALUES (1, 1, 'Hannes', 'Winkler', 'hannes.winkler@kino.at'),
+(2, 1, 'Paula', 'Jung', 'paula.jung@kino.at'),
+(3, 1, 'Peter', 'Schmidt', 'peter.schmidt@kino.at'),
+(4, 2, 'Harald', 'Schreiner', 'harald.schreiner@kino.at'),
+(5, 2, 'Kurt', 'Müller', 'kurt.müller@kino.at'),
+(6, 1, 'Michaella', 'Maier', 'michaella.maier@kino.at');
 
+
+
+
+
+
+
+INSERT INTO Kunde(KundenID, Vorname, Nachname, Email, Strasse,HNr)
+VALUES (1, 'Hannes', 'Winkler', 'hannes.winkler@kino.at','Ibererstraße ','12'),
+(2, 'Hannes', 'Winkler', 'hannes.winkler@gmail.at','Wienerstraße ','22'),
+(3, 'Kathrin', 'Meier', 'kathrin.winkler@aon.at','Annenstraße ','3'),
+(4, 'Andreas', 'Schuster', 'andreas.schuster@outlook.com','Schusterstraße ','4'),
+(5, 'Philipp', 'Croce', 'philipp.croce@bulme.at','RadegunderStraße ','5'),
+(6, 'Julia', 'Steinegger', 'julia.steinegger@outlook.at','Am Ring ','2');
+
+
+
+
+INSERT INTO Saal(SaalID,Kino,Pojektion,Plaeze)
+VALUES(1,1,'2D',200),
+(2,1,'3D',150),
+(3,2,'2D',200),
+(4,2,'3D',150);
 
 
