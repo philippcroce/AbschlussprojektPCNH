@@ -1,0 +1,26 @@
+INSERT INTO Kino(KinoID,Strasse,HNr,Stadt,TelNr)
+VALUES('1','Annenstraße','11','Graz','01862585459'),
+VALUES('2','Am Ring','1','Wien','0664674254'),
+
+
+
+
+
+
+
+
+
+
+
+
+
+INSERT INTO Mitarbeiter(MitarbeiterID, Kino, Vorname, Nachname, Email)
+VALUES ('1', '1', 'Hannes', 'Winkler', 'hannes.winkler@kino.at'),
+('2', '1', 'Paula', 'Jung', 'paula.jung@kino.at'),
+('3', '1', 'Peter', 'Schmidt', 'peter.schmidt@kino.at'),
+('4', '2', 'Harald', 'Schreiner', 'harald.schreiner@kino.at'),
+('5', '2', 'Kurt', 'Müller', 'kurt.müller@kino.at'),
+('6', '1', 'Michaella', 'Maier', 'michaella.maier@kino.at');
+
+
+
