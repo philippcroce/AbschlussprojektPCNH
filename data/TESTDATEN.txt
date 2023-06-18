@@ -39,3 +39,11 @@ VALUES(1,1,'2D',200),
 (4,2,'3D',150);
 
 
+
+INSERT INTO Film(FilmID, Name, Dauer)
+Values(1,'TetsFilm#, 90);
+
+
+Insert Into Vorstellungen(VorstellungsID,Saal,Fil,ZP_S,ZP_E)
+Values(1,1,1, '13:00', '14:40');
+
