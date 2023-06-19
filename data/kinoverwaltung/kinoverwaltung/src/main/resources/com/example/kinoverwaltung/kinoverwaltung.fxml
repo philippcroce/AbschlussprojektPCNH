@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.kinoverwaltung.Controller">
+   <children>
+      <TabPane prefHeight="500.0" prefWidth="400.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Vorstellung buchen">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="456.0" prefWidth="400.0">
+                     <children>
+                        <Label layoutX="30.0" layoutY="28.0" text="Datum auswählen:" />
+                        <DatePicker fx:id="dpDatum" layoutX="30.0" layoutY="45.0" onAction="#vorschau" prefHeight="25.0" prefWidth="340.0" />
+                        <TableView fx:id="tvVorschau" layoutX="30.0" layoutY="89.0" prefHeight="200.0" prefWidth="340.0">
+                          <columns>
+                            <TableColumn fx:id="tcFilm" prefWidth="222.0" text="Film" />
+                              <TableColumn fx:id="tcUhrzeit" prefWidth="117.0" text="Uhrzeit" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="tfVorname" layoutX="30.0" layoutY="303.0" prefHeight="25.0" prefWidth="165.0" promptText="Vorname" />
+                        <TextField fx:id="tfNachname" layoutX="207.0" layoutY="303.0" prefHeight="25.0" prefWidth="165.0" promptText="Nachname" />
+                        <TextField fx:id="tfStrasse" layoutX="30.0" layoutY="336.0" prefHeight="25.0" prefWidth="250.0" promptText="Straße" />
+                        <TextField fx:id="tfHNr" layoutX="290.0" layoutY="336.0" prefHeight="25.0" prefWidth="80.0" promptText="Nr." />
+                        <TextField fx:id="tfEmail" layoutX="30.0" layoutY="371.0" prefHeight="25.0" prefWidth="250.0" promptText="Email" />
+                        <Button fx:id="btnBuchen" layoutX="30.0" layoutY="417.0" mnemonicParsing="false" onAction="#buchen" prefHeight="25.0" prefWidth="340.0" text="Buchen" />
+                        <Spinner fx:id="spKartenanzahl" editable="true" layoutX="290.0" layoutY="371.0" prefHeight="25.0" prefWidth="80.0" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Vorstellungen editieren">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

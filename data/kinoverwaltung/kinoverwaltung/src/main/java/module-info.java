@@ -11,4 +11,5 @@ module com.example.kinoverwaltung {
     exports com.example.kinoverwaltung;
     exports util;
     opens util to javafx.fxml;
+    opens objects;
 }
